@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Learn about South Africa's tourism heritage and get expert travel advice. Contact our specialists for personalized trip planning and support.">
+    <title>About & Support - Welcome to South Africa</title>
+    <link rel="stylesheet" href="styles/main.css">
+</head>
+<body>
+    <a href="#main-content" class="skip-link">Skip to main content</a>
+    
+    <header>
+        <nav class="navbar">
+            <div class="nav-container">
+                <div class="logo">
+                    <h1>Welcome to South Africa</h1>
+                </div>
+                <ul class="nav-menu">
+                    <li><a href="index.html" class="nav-link">Home</a></li>
+                    <li><a href="destinations.html" class="nav-link">Destinations</a></li>
+                    <li><a href="wildlife.html" class="nav-link">Wildlife & Safari</a></li>
+                    <li><a href="planning.html" class="nav-link">Travel Planning</a></li>
+                    <li><a href="about.html" class="nav-link active">About & Support</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <main id="main-content">
+        <!-- Page Header -->
+        <section class="page-header">
+            <div class="container">
+                <h1>About South Africa Tourism</h1>
+                <p>Discover the story behind the Rainbow Nation and get expert support for your journey</p>
+            </div>
+        </section>
+
+        <!-- About South Africa -->
+        <section class="about-content">
+            <div class="container">
+                <div class="about-grid">
+                    <div class="about-text">
+                        <h2>The Rainbow Nation Welcomes You</h2>
+                        <p>South Africa, affectionately known as the Rainbow Nation, is a country of extraordinary diversity and natural beauty. From the dramatic coastlines of the Western and Eastern Cape to the vast savannas of the Lowveld, our landscapes are as varied as our people.</p>
+                        
+                        <p>With 11 official languages and a rich tapestry of cultures, South Africa offers visitors an authentic African experience combined with world-class infrastructure and hospitality.</p>
+                        
+                        <h3>Our Tourism Heritage</h3>
+                        <p>South Africa's modern tourism industry began developing in the 1990s following democratic transformation. Today, we are proud to be one of Africa's leading tourism destinations, welcoming over 10 million international visitors annually.</p>
+                    </div>
+                    
+                    <div class="about-image">
+                        <img src="images/rainbow-nation.jpg" alt="Diverse group of South African people representing the Rainbow Nation">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Form Section -->
+        <section id="contact" class="contact-section">
+            <div class="container">
+                <h2>Get Expert Travel Advice</h2>
+                <p class="contact-intro">Our experienced travel specialists are here to help you plan the perfect South African adventure. Submit your inquiry and we'll provide personalized recommendations.</p>
+                
+                <div class="form-container">
+                    <form action="#" method="post" class="contact-form">
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="first-name">First Name *</label>
+                                <input type="text" id="first-name" name="first-name" required>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="last-name">Last Name *</label>
+                                <input type="text" id="last-name" name="last-name" required>
+                            </div>
+                        </div>
+                        
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="email">Email Address *</label>
+                                <input type="email" id="email" name="email" required>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="phone">Phone Number</label>
+                                <input type="tel" id="phone" name="phone">
+                            </div>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="country">Country of Residence *</label>
+                            <select id="country" name="country" required>
+                                <option value="">Select your country</option>
+                                <option value="uk">United Kingdom</option>
+                                <option value="usa">United States</option>
+                                <option value="canada">Canada</option>
+                                <option value="australia">Australia</option>
+                                <option value="germany">Germany</option>
+                                <option value="france">France</option>
+                                <option value="other">Other</option>
+                            </select>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="travel-dates">Preferred Travel Dates</label>
+                            <input type="text" id="travel-dates" name="travel-dates" placeholder="e.g., June 2025 or Flexible">
+                        </div>
+                        
+                        <fieldset class="interest-group">
+                            <legend>Primary Interests (Select all that apply)</legend>
+                            <div class="checkbox-grid">
+                                <div class="checkbox-group">
+                                    <input type="checkbox" id="wildlife" name="interests" value="wildlife">
+                                    <label for="wildlife">Wildlife & Safari</label>
+                                </div>
+                                
+                                <div class="checkbox-group">
+                                    <input type="checkbox" id="culture" name="interests" value="culture">
+                                    <label for="culture">Cultural Experiences</label>
+                                </div>
+                                
+                                <div class="checkbox-group">
+                                    <input type="checkbox" id="adventure" name="interests" value="adventure">
+                                    <label for="adventure">Adventure Activities</label>
+                                </div>
+                                
+                                <div class="checkbox-group">
+                                    <input type="checkbox" id="wine" name="interests" value="wine">
+                                    <label for="wine">Wine Tourism</label>
+                                </div>
+                            </div>
+                        </fieldset>
+                        
+                        <fieldset class="budget-group">
+                            <legend>Approximate Budget Range (per person)</legend>
+                            <div class="radio-group">
+                                <div class="radio-option">
+                                    <input type="radio" id="budget-economy" name="budget" value="economy">
+                                    <label for="budget-economy">Under $2,000</label>
+                                </div>
+                                
+                                <div class="radio-option">
+                                    <input type="radio" id="budget-mid" name="budget" value="mid-range">
+                                    <label for="budget-mid">$2,000 - $5,000</label>
+                                </div>
+                                
+                                <div class="radio-option">
+                                    <input type="radio" id="budget-luxury" name="budget" value="luxury">
+                                    <label for="budget-luxury">$5,000 - $10,000</label>
+                                </div>
+                                
+                                <div class="radio-option">
+                                    <input type="radio" id="budget-premium" name="budget" value="premium">
+                                    <label for="budget-premium">Over $10,000</label>
+                                </div>
+                            </div>
+                        </fieldset>
+                        
+                        <div class="form-group">
+                            <label for="message">Tell us about your dream South African experience *</label>
+                            <textarea id="message" name="message" required placeholder="Describe your ideal itinerary, specific interests, or any questions about visiting South Africa..."></textarea>
+                        </div>
+                        
+                        <div class="checkbox-group">
+                            <input type="checkbox" id="newsletter" name="newsletter" value="yes">
+                            <label for="newsletter">Subscribe to our newsletter for travel tips and exclusive offers</label>
+                        </div>
+                        
+                        <div class="checkbox-group">
+                            <input type="checkbox" id="privacy" name="privacy" required>
+                            <label for="privacy">I agree to the privacy policy and terms of service *</label>
+                        </div>
+                        
+                        <button type="submit" class="btn btn-primary">Send My Inquiry</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Explore</h3>
+                    <ul>
+                        <li><a href="destinations.html">Destinations</a></li>
+                        <li><a href="wildlife.html">Wildlife & Safari</a></li>
+                        <li><a href="planning.html">Travel Planning</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>Support</h3>
+                    <ul>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="about.html#contact">Contact</a></li>
+                        <li><a href="planning.html#safety">Safety Info</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Welcome to South Africa. All rights reserved.</p>
+                <p>Images: <a href="https://unsplash.com">Unsplash</a> | <a href="https://pixabay.com">Pixabay</a></p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
