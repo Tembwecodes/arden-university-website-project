@@ -83,6 +83,11 @@ body {
     border-radius: 1px;
 }
 
+/* Hide the checkbox */
+.nav-toggle {
+    display: none;
+}
+
 .hamburger {
     display: none;
     flex-direction: column;
@@ -98,6 +103,43 @@ body {
     border-radius: 1px;
 }
 
+@media screen and (max-width: 768px) {
+    .hamburger {
+        display: flex;
+    }
+    
+    .nav-menu {
+        position: fixed;
+        left: -100%;
+        top: 88px;
+        flex-direction: column;
+        background-color: white;
+        width: 100%;
+        text-align: center;
+        transition: left 0.3s ease;
+        box-shadow: 0 10px 27px rgba(0,0,0,0.05);
+        padding: 2rem 0;
+        z-index: 999;
+    }
+    
+    /* Show menu when checkbox is checked */
+    .nav-toggle:checked ~ .nav-menu {
+        left: 0;
+    }
+    
+    /* Animate hamburger to X when checked */
+    .nav-toggle:checked ~ .hamburger .bar:nth-child(1) {
+        transform: rotate(-45deg) translate(-5px, 6px);
+    }
+    
+    .nav-toggle:checked ~ .hamburger .bar:nth-child(2) {
+        opacity: 0;
+    }
+    
+    .nav-toggle:checked ~ .hamburger .bar:nth-child(3) {
+        transform: rotate(45deg) translate(-5px, -6px);
+    }
+}
 /* Main Content Styles */
 main {
     margin-top: 88px;
@@ -344,42 +386,7 @@ main {
 }
 
 /* Add responsive design and other page styles */
-@media screen and (max-width: 768px) {
-    .hamburger {
-        display: flex;
-    }
-    
-    .nav-menu {
-        position: fixed;
-        left: -100%;
-        top: 70px;
-        flex-direction: column;
-        background-color: white;
-        width: 100%;
-        text-align: center;
-        transition: 0.3s;
-        box-shadow: 0 10px 27px rgba(0,0,0,0.05);
-        padding: 2rem 0;
-    }
-    
-    .nav-menu.active {
-        left: 0;
-    }
-    
-    .hero {
-        grid-template-columns: 1fr;
-        text-align: center;
-        padding: 2rem 1rem;
-    }
-    
-    .hero h1 {
-        font-size: 2.5rem;
-    }
-    
-    .hero-content {
-        padding: 0 1rem 2rem;
-    }
-}
+
 
 @media screen and (max-width: 1024px) {
     .hero h1 {
