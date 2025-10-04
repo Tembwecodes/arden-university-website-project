@@ -208,11 +208,16 @@ main {
 }
 .hero-buttons {
     display: flex;
-    gap: 1.5rem;
-    flex-wrap: wrap;
     justify-content: center;
-    margin-left: auto;   /* centers the container itself */
-    margin-right: auto;  /* centers the container itself */
+    margin-top: 3rem;    /* centers the container itself */
+}
+
+.btn-explore {
+    padding: 18px 50px;
+    font-size: 1.1rem;
+    text-transform: uppercase;
+    letter-spacing: 0.15em;
+    font-weight: 700;
 }
 .btn {
     padding: 16px 32px;
@@ -1225,5 +1230,304 @@ footer {
     .footer-brand {
         max-width: 100%;
     }
+}
+
+/* Itineraries Section */
+.itineraries-section {
+    padding: 6rem 0;
+    background: white;
+}
+
+.itinerary-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+}
+
+.itinerary-card {
+    background: #f8fafc;
+    padding: 2rem;
+    border-radius: 16px;
+    border-left: 4px solid #e67e22;
+}
+
+.itinerary-card h3 {
+    color: #1a1a1a;
+    margin-bottom: 1rem;
+    font-size: 1.3rem;
+}
+
+/* Packages Section */
+.packages-section {
+    padding: 6rem 0;
+    background: #fafbfc;
+}
+
+.packages-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 2rem;
+}
+
+.package-card {
+    background: white;
+    padding: 2.5rem;
+    border-radius: 20px;
+    text-align: center;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+    transition: transform 0.3s ease;
+}
+
+.package-card:hover {
+    transform: translateY(-8px);
+}
+
+.package-card.highlight {
+    border: 3px solid #e67e22;
+}
+
+.package-card h3 {
+    color: #1a1a1a;
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
+}
+
+.package-card p {
+    color: #e67e22;
+    font-weight: 600;
+    font-size: 1.2rem;
+    margin-bottom: 1.5rem;
+}
+
+.package-card ul {
+    list-style: none;
+    padding: 0;
+    text-align: left;
+}
+
+.package-card li {
+    padding: 0.5rem 0;
+    border-bottom: 1px solid #f1f5f9;
+}
+
+/* Customs Section */
+.customs-section {
+    padding: 6rem 0;
+    background: white;
+}
+
+.customs-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 2rem;
+}
+
+.custom-item {
+    padding: 2rem;
+    background: #f8fafc;
+    border-radius: 16px;
+}
+
+.custom-item h3 {
+    color: #e67e22;
+    margin-bottom: 1rem;
+    font-size: 1.2rem;
+}
+
+.custom-item p {
+    color: #64748b;
+    line-height: 1.6;
+}
+
+/* Dropdown Navigation */
+.nav-item-dropdown {
+    position: relative;
+}
+
+.dropdown-menu {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background: white;
+    min-width: 250px;
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.15);
+    border-radius: 8px;
+    padding: 1rem 0;
+    list-style: none;
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(-10px);
+    transition: all 0.3s ease;
+    z-index: 1001;
+    margin-top: 1rem;
+}
+
+.nav-item-dropdown:hover .dropdown-menu {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
+}
+
+.dropdown-menu li {
+    padding: 0;
+}
+
+.dropdown-menu a {
+    display: block;
+    padding: 0.75rem 1.5rem;
+    color: #1a1a1a;
+    text-decoration: none;
+    font-size: 0.95rem;
+    transition: all 0.2s ease;
+}
+
+.dropdown-menu a:hover {
+    background: #f8fafc;
+    color: #e67e22;
+    padding-left: 2rem;
+}
+
+/* Mobile dropdown behavior */
+@media screen and (max-width: 768px) {
+    .dropdown-menu {
+        position: static;
+        opacity: 1;
+        visibility: visible;
+        transform: none;
+        box-shadow: none;
+        background: #f8fafc;
+        margin-top: 0.5rem;
+        border-radius: 0;
+    }
+    
+    .dropdown-menu a {
+        padding-left: 2rem;
+        font-size: 0.9rem;
+    }
+}
+
+/* Modern Itinerary Cards */
+.itineraries-section {
+    padding: 6rem 0;
+    background: #fafbfc;
+}
+
+.itinerary-cards-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    gap: 2rem;
+}
+
+.itinerary-card-modern {
+    background: white;
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+    transition: all 0.3s ease;
+    border: 3px solid transparent;
+}
+
+.itinerary-card-modern:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15);
+    border-color: #e67e22;
+}
+
+.card-image {
+    position: relative;
+    height: 250px;
+    overflow: hidden;
+}
+
+.card-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+}
+
+.itinerary-card-modern:hover .card-image img {
+    transform: scale(1.1);
+}
+
+.card-badge {
+    position: absolute;
+    top: 15px;
+    left: 15px;
+    background: #e67e22;
+    color: white;
+    padding: 0.5rem 1rem;
+    border-radius: 20px;
+    font-size: 0.85rem;
+    font-weight: 600;
+}
+
+.card-body {
+    padding: 2rem;
+}
+
+.card-body h3 {
+    color: #1a1a1a;
+    font-size: 1.5rem;
+    margin-bottom: 0.75rem;
+    font-weight: 700;
+}
+
+.duration {
+    color: #64748b;
+    font-size: 0.9rem;
+    margin-bottom: 0.5rem;
+}
+
+.rating {
+    color: #fbbf24;
+    font-size: 1rem;
+    margin-bottom: 1rem;
+}
+
+.itinerary-detail {
+    color: #64748b;
+    font-size: 0.95rem;
+    margin-bottom: 0.75rem;
+    line-height: 1.6;
+}
+
+.price {
+    color: #1a1a1a;
+    font-size: 1rem;
+    margin-top: 1.5rem;
+    padding-top: 1.5rem;
+    border-top: 1px solid #e2e8f0;
+}
+
+.price strong {
+    color: #e67e22;
+    font-size: 1.5rem;
+    font-weight: 700;
+}
+
+/* Package Cards with Highlight Border */
+.package-card {
+    background: white;
+    padding: 2.5rem;
+    border-radius: 20px;
+    text-align: center;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+    transition: all 0.3s ease;
+    border: 3px solid #e2e8f0;
+}
+
+.package-card.highlight {
+    border: 4px solid #e67e22;
+    transform: scale(1.05);
+}
+
+.package-card:hover {
+    transform: translateY(-8px) scale(1.02);
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15);
+}
+
+.package-card.highlight:hover {
+    transform: translateY(-8px) scale(1.07);
 }
 
