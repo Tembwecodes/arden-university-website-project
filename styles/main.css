@@ -52,6 +52,14 @@ body {
     letter-spacing: -0.02em;
 }
 
+.logo-text {
+    color: #1a1a1a;
+    font-size: 1.75rem;
+    font-weight: 700;
+    letter-spacing: -0.02em;
+    display: block;
+}
+
 .nav-menu {
     display: flex;
     list-style: none;
@@ -62,7 +70,7 @@ body {
     color: #4a5568;
     text-decoration: none;
     font-weight: 500;
-    font-size: 0.95rem;
+    font-size: 1rem;
     transition: all 0.3s ease;
     position: relative;
 }
@@ -79,7 +87,7 @@ body {
     left: 0;
     width: 100%;
     height: 2px;
-    background: #e67e22;
+    background: #d35400;
     border-radius: 1px;
 }
 
@@ -192,7 +200,7 @@ main {
 }
 
 .hero h1 span {
-    color: #e67e22;
+    color: #d35400;
     display: block;
 }
 
@@ -211,14 +219,6 @@ main {
     justify-content: center;
     margin-top: 3rem;    /* centers the container itself */
 }
-
-.btn-explore {
-    padding: 18px 50px;
-    font-size: 1.1rem;
-    text-transform: uppercase;
-    letter-spacing: 0.15em;
-    font-weight: 700;
-}
 .btn {
     padding: 16px 32px;
     border: none;
@@ -234,7 +234,7 @@ main {
 }
 
 .btn-primary {
-    background: #e67e22;
+    background: #d35400;
     color: white;
     box-shadow: 0 4px 12px rgba(230, 126, 34, 0.3);
 }
@@ -253,7 +253,7 @@ main {
 }
 
 .btn-secondary:hover {
-    border-color: #e67e22;
+    border-color: #d35400;
     transform: translateY(-2px);
     box-shadow: 0 8px 20px rgba(0, 0, 0, 0.12);
 }
@@ -291,7 +291,7 @@ main {
 
 .stat-item h3 {
     font-size: 3rem;
-    color: #e67e22;
+    color: #d35400;
     font-weight: 800;
     margin-bottom: 0.5rem;
     letter-spacing: -0.02em;
@@ -299,7 +299,7 @@ main {
 
 .stat-item p {
     font-size: 1.1rem;
-    color: #64748b;
+    color: #475569;
     font-weight: 500;
 }
 
@@ -321,7 +321,7 @@ main {
 .featured .section-subtitle {
     text-align: center;
     font-size: 1.25rem;
-    color: #64748b;
+    color: #475569;
     margin-bottom: 4rem;
     max-width: 600px;
     margin-left: auto;
@@ -372,22 +372,22 @@ main {
 }
 
 .card-content p {
-    color: #64748b;
+    color: #475569;
     margin-bottom: 1.5rem;
     line-height: 1.6;
 }
 
 .card-link {
-    color: #e67e22;
+    color: #bf4718;
     text-decoration: none;
     font-weight: 600;
-    font-size: 0.95rem;
+    font-size: 1rem;
     letter-spacing: -0.01em;
     transition: all 0.3s ease;
 }
 
 .card-link:hover {
-    color: #d35400;
+    color: #bf4718;
 }
 
 /* Add responsive design and other page styles */
@@ -402,7 +402,7 @@ main {
 }
 /* Page Header Styles */
 .page-header {
-    background: linear-gradient(135deg, #e67e22 0%, #d35400 100%);
+    background: linear-gradient(135deg, #d35400 0%, #d35400 100%);
     color: white;
     text-align: center;
     padding: 6rem 0 4rem;
@@ -441,7 +441,7 @@ main {
 }
 
 .about-text h3 {
-    color: #e67e22;
+    color: #d35400;
     margin: 2rem 0 1rem;
     font-size: 1.5rem;
 }
@@ -532,7 +532,7 @@ main {
 .form-group textarea:focus,
 .form-group select:focus {
     outline: none;
-    border-color: #e67e22;
+    border-color: #d35400;
     box-shadow: 0 0 0 3px rgba(230, 126, 34, 0.1);
 }
 
@@ -691,7 +691,7 @@ legend {
 }
 
 .animal-info strong {
-    color: #e67e22;
+    color: #bf4718;
 }
 
 /* Safari Types */
@@ -860,7 +860,7 @@ legend {
 }
 
 .destination-tagline {
-    color: #e67e22;
+    color: #bf4718;
     font-style: italic;
     font-weight: 600;
     margin-bottom: 1.5rem;
@@ -884,7 +884,7 @@ legend {
     content: "→";
     position: absolute;
     left: 0;
-    color: #e67e22;
+    color: #d35400;
     font-weight: bold;
 }
 
@@ -978,7 +978,7 @@ legend {
     padding: 1rem;
     background: #f8fafc;
     border-radius: 8px;
-    border-left: 4px solid #e67e22;
+    border-left: 4px solid #d35400;
     position: relative;
     padding-left: 2rem;
 }
@@ -987,7 +987,7 @@ legend {
     content: "✓";
     position: absolute;
     left: 0.75rem;
-    color: #e67e22;
+    color: #d35400;
     font-weight: bold;
 }
 
@@ -1074,8 +1074,8 @@ legend {
 
 /* Footer Styles */
 footer {
-    background: #2d3748;
-    color: white;
+    background: #1a202c;
+    color: #f7fafc;
     padding: 4rem 0 2rem;
 }
 
@@ -1098,15 +1098,15 @@ footer {
 }
 
 .footer-brand p {
-    color: #cbd5e0;
+    color: #f7fafc;
     margin-bottom: 1rem;
     line-height: 1.6;
-    font-size: 0.9rem;
+    font-size: 1rem;
 }
 
 .contact-info {
-    color: #cbd5e0;
-    font-size: 0.9rem;
+    color: #f7fafc;
+    font-size: 1rem;
     margin-bottom: 0.5rem;
 }
 
@@ -1127,14 +1127,14 @@ footer {
 }
 
 .footer-section a {
-    color: #cbd5e0;
+    color: #f7fafc;
     text-decoration: none;
     transition: color 0.3s ease;
-    font-size: 0.9rem;
+    font-size: 1rem;
 }
 
 .footer-section a:hover {
-    color: #e67e22;
+    color: #d35400;
 }
 
 /* Social Media Links */
@@ -1203,8 +1203,8 @@ footer {
     border-top: 1px solid #4a5568;
     padding-top: 2rem;
     text-align: center;
-    color: #cbd5e0;
-    font-size: 0.9rem;
+    color: #f7fafc;
+    font-size: 1rem;
 }
 
 .footer-bottom p {
@@ -1212,7 +1212,7 @@ footer {
 }
 
 .footer-bottom a {
-    color: #e67e22;
+    color: #d35400;
     text-decoration: none;
 }
 
@@ -1248,7 +1248,7 @@ footer {
     background: #f8fafc;
     padding: 2rem;
     border-radius: 16px;
-    border-left: 4px solid #e67e22;
+    border-left: 4px solid #d35400;
 }
 
 .itinerary-card h3 {
@@ -1283,7 +1283,7 @@ footer {
 }
 
 .package-card.highlight {
-    border: 3px solid #e67e22;
+    border: 3px solid #d35400;
 }
 
 .package-card h3 {
@@ -1293,7 +1293,7 @@ footer {
 }
 
 .package-card p {
-    color: #e67e22;
+    color: #bf4718;
     font-weight: 600;
     font-size: 1.2rem;
     margin-bottom: 1.5rem;
@@ -1329,7 +1329,7 @@ footer {
 }
 
 .custom-item h3 {
-    color: #e67e22;
+    color: #bf4718;
     margin-bottom: 1rem;
     font-size: 1.2rem;
 }
@@ -1377,13 +1377,13 @@ footer {
     padding: 0.75rem 1.5rem;
     color: #1a1a1a;
     text-decoration: none;
-    font-size: 0.95rem;
+    font-size: 1rem;
     transition: all 0.2s ease;
 }
 
 .dropdown-menu a:hover {
     background: #f8fafc;
-    color: #e67e22;
+    color: #d35400;
     padding-left: 2rem;
 }
 
@@ -1430,7 +1430,7 @@ footer {
 .itinerary-card-modern:hover {
     transform: translateY(-8px);
     box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15);
-    border-color: #e67e22;
+    border-color: #d35400;
 }
 
 .card-image {
@@ -1454,7 +1454,7 @@ footer {
     position: absolute;
     top: 15px;
     left: 15px;
-    background: #e67e22;
+    background: #d35400;
     color: white;
     padding: 0.5rem 1rem;
     border-radius: 20px;
@@ -1474,20 +1474,20 @@ footer {
 }
 
 .duration {
-    color: #64748b;
-    font-size: 0.9rem;
+    color: #475569;
+    font-size: 1rem;
     margin-bottom: 0.5rem;
 }
 
 .rating {
-    color: #fbbf24;
+    color: #f59e0b;
     font-size: 1rem;
     margin-bottom: 1rem;
 }
 
 .itinerary-detail {
-    color: #64748b;
-    font-size: 0.95rem;
+    color: #475569;
+    font-size: 1rem;
     margin-bottom: 0.75rem;
     line-height: 1.6;
 }
@@ -1501,11 +1501,14 @@ footer {
 }
 
 .price strong {
-    color: #e67e22;
+    color: #bf4718;
     font-size: 1.5rem;
     font-weight: 700;
 }
 
+.itinerary-detail strong {
+    color: #bf4718;  /* Consistent with other strong tags */
+}
 /* Package Cards with Highlight Border */
 .package-card {
     background: white;
@@ -1518,7 +1521,7 @@ footer {
 }
 
 .package-card.highlight {
-    border: 4px solid #e67e22;
+    border: 4px solid #d35400;
     transform: scale(1.05);
 }
 
@@ -1531,3 +1534,19 @@ footer {
     transform: translateY(-8px) scale(1.07);
 }
 
+.skip-link {
+    position: absolute;
+    top: -40px;
+    left: 6px;
+    background: #1a1a1a;
+    color: white;
+    padding: 8px 16px;
+    text-decoration: none;
+    transition: top 0.3s;
+    border-radius: 4px;
+    z-index: 2000;
+}
+
+.skip-link:focus {
+    top: 6px;
+}

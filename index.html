@@ -5,19 +5,19 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Discover South Africa's breathtaking wildlife, vibrant culture, and stunning landscapes. Your gateway to the Rainbow Nation's premier tourism experiences.">
     <title>Welcome to South Africa - Discover the Rainbow Nation</title>
-    <link rel="stylesheet" href="/styles/main.css">
+    <link rel="stylesheet" href="/styles/main.css?v=3">
 </head>
 <body>
+    <a href="#main-content" class="skip-link">Skip to main content</a>
     <header>
         <nav class="navbar">
             <div class="nav-container">
                 <div class="logo">
-                  
-                    <h1>Welcome to South Africa</h1>
+                     <span class="logo-text">Welcome to South Africa</span>
                 </div>
 
-                <input type="checkbox" id="nav-toggle" class="nav-toggle">
-                <label for="nav-toggle" class="hamburger">
+                <input type="checkbox" id="nav-toggle" class="nav-toggle" aria-label="Toggle navigation menu">
+                <label for="nav-toggle" class="hamburger" aria-label="Menu">
                     <span class="bar"></span>
                     <span class="bar"></span>
                     <span class="bar"></span>
@@ -46,8 +46,7 @@
             </div>
         </nav>
     </header>
-
-    <main>
+        <main id="main-content"></main>
         <!-- Hero Section -->
         <section class="hero">
             <div class="hero-content">
@@ -58,25 +57,24 @@
                 </div>
             </div>
         </section>
-
         <!-- Quick Stats -->
         <section class="stats">
             <div class="container">
                 <div class="stats-grid">
                     <div class="stat-item">
-                        <h3>20+</h3>
+                        <h2>20+</h2>
                         <p>National Parks</p>
                     </div>
                     <div class="stat-item">
-                        <h3>11</h3>
+                        <h2>11</h2>
                         <p>Official Languages</p>
                     </div>
                     <div class="stat-item">
-                        <h3>Big 5</h3>
+                        <h2>Big 5</h2>
                         <p>Wildlife Experience</p>
                     </div>
                     <div class="stat-item">
-                        <h3>3</h3>
+                        <h2>3</h2>
                         <p>Capital Cities</p>
                     </div>
                 </div>
@@ -90,29 +88,29 @@
                 <p class="section-subtitle">Discover the best of South Africa through our carefully curated experiences</p>
                 <div class="experience-grid">
                     <article class="experience-card">
-                        <img src="images/Kruger-safari.jpg" alt="Safari vehicle observing lions in Kruger National Park">
+                        <img src="images/Kruger-safari.jpg" alt="lions being viewed in safari vehicle in Kruger National Park">
                         <div class="card-content">
                             <h3>Kruger Safari Adventure</h3>
                             <p>Experience the Big Five in Africa's most famous wildlife reserve. Our guided safaris offer unparalleled wildlife viewing opportunities.</p>
-                            <a href="wildlife.html" class="card-link">Learn More</a>
+                            <a href="pages/wildlife.html" class="card-link">Learn More About Kruger Safari</a>
                         </div>
                     </article>
                     
                     <article class="experience-card">
-                        <img src="images/cape-town-1.jpg" alt="Aerial view of Cape Town with Table Mountain">
+                        <img src="images/cape-town-1.jpg" alt="Cape Town cityscape with Table Mountain background">
                         <div class="card-content">
                             <h3>Cape Town Cultural Journey</h3>
                             <p>Explore the Mother City's rich history, vibrant neighborhoods, and world-class wine regions.</p>
-                            <a href="destinations.html" class="card-link">Learn More</a>
+                          <a href="pages/destinations.html#cape-town" class="card-link">Learn More About cape town cultural journey</a>
                         </div>
                     </article>
 
                     <article class="experience-card">
-                        <img src="images/drakensberg-1.jpg" alt="Drakensberg mountain range with hiking trails">
+                        <img src="images/drakensberg-1.jpg" alt="Hiking trails winding through Drakensberg mountains">
                         <div class="card-content">
                             <h3>Drakensberg Adventures</h3>
                             <p>Hike through ancient San rock art sites and dramatic mountain landscapes.</p>
-                            <a href="destinations.html" class="card-link">Learn More</a>
+                          <a href="pages/destinations.html#drakensberg" class="card-link">Learn More About Drakensberg</a>
                         </div>
                     </article>
                 </div>
@@ -125,29 +123,29 @@
         <div class="footer-content">
             <!-- Company Info Section -->
             <div class="footer-section footer-brand">
-                <h3>Welcome to South Africa</h3>
+                <h2>Welcome to South Africa</h2>
                 <p>Discover South Africa's breathtaking wildlife, vibrant culture, and stunning landscapes. Your gateway to the Rainbow Nation.</p>
                 <p class="contact-info">+27 11 123 4567</p>
                 <p class="contact-info">info@southafrica.com</p>
                 <div class="social-links">
-                    <a href="https://facebook.com" class="social-link facebook" target="_blank" rel="noopener noreferrer" aria-label="Facebook">
-                        <span class="social-text">f</span>
-                    </a>
-                    <a href="https://twitter.com" class="social-link twitter" target="_blank" rel="noopener noreferrer" aria-label="Twitter">
-                        <span class="social-text">t</span>
-                    </a>
-                    <a href="https://instagram.com" class="social-link instagram" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
-                        <span class="social-text">in</span>
-                    </a>
-                    <a href="https://youtube.com" class="social-link youtube" target="_blank" rel="noopener noreferrer" aria-label="YouTube">
-                        <span class="social-text">G</span>
-                    </a>
+                 <a href="https://facebook.com" class="social-link facebook" target="_blank" rel="noopener noreferrer" aria-label="Visit our Facebook page">
+                    <span class="social-text" aria-hidden="true">f</span>
+                </a>
+                <a href="https://twitter.com" class="social-link twitter" target="_blank" rel="noopener noreferrer" aria-label="Visit our Twitter page">
+                    <span class="social-text" aria-hidden="true">t</span>
+                </a>
+                <a href="https://instagram.com" class="social-link instagram" target="_blank" rel="noopener noreferrer" aria-label="Visit our Instagram page">
+                    <span class="social-text" aria-hidden="true">in</span>
+                </a>
+                <a href="https://youtube.com" class="social-link youtube" target="_blank" rel="noopener noreferrer" aria-label="Visit our YouTube channel">
+                    <span class="social-text" aria-hidden="true">G</span>
+                </a>  
                 </div>
             </div>
 
             <!-- Quick Links -->
             <div class="footer-section">
-                <h3>Quick Links</h3>
+                <h2>Quick Links</h2>
                 <ul>
                     <li><a href="index.html">Home</a></li>
                     <li><a href="pages/destinations.html">Destinations</a></li>
@@ -158,7 +156,7 @@
 
             <!-- Company -->
             <div class="footer-section">
-                <h3>Company</h3>
+                <h2>Company</h2>
                 <ul>
                     <li><a href="pages/about.html">About Us</a></li>
                     <li><a href="pages/about.html#contact">Contact</a></li>
@@ -169,7 +167,7 @@
 
             <!-- Support -->
             <div class="footer-section">
-                <h3>Support</h3>
+                <h2>Support</h2>
                 <ul>
                     <li><a href="#">Customer Support</a></li>
                     <li><a href="#">Privacy Policy</a></li>
@@ -181,7 +179,6 @@
         
         <div class="footer-bottom">
             <p>&copy; 2025 Welcome to South Africa. All rights reserved.</p>
-            <p>Images: <a href="https://unsplash.com">Unsplash</a> | <a href="https://pixabay.com">Pixabay</a></p>
         </div>
     </div>
 </footer>
