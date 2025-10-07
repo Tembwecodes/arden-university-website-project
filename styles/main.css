@@ -234,15 +234,20 @@ main {
 }
 
 .btn-primary {
-    background: #d35400;
-    color: white;
-    box-shadow: 0 4px 12px rgba(230, 126, 34, 0.3);
+    background-color: #c5440d; /* Changed from #d4671f to darker orange */
+    color: #ffffff;
+    border: none;
+    padding: 15px 30px;
+    font-size: 1.1rem;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.3s ease;
 }
 
 .btn-primary:hover {
-    background: #d35400;
+    background-color: #a63809; /* Even darker on hover */
     transform: translateY(-2px);
-    box-shadow: 0 8px 20px rgba(230, 126, 34, 0.4);
+    box-shadow: 0 6px 20px rgba(196, 68, 13, 0.3);
 }
 
 .btn-secondary {
@@ -296,6 +301,17 @@ main {
     margin-bottom: 0.5rem;
     letter-spacing: -0.02em;
 }
+
+/* Make stats section h2 elements orange */
+.stats .stat-item h2 {
+    color: #bf4718; /* Orange color */
+    font-size: 3rem;
+    font-weight: 700;
+    margin-bottom: 0.5rem;
+}
+
+
+
 
 .stat-item p {
     font-size: 1.1rem;
@@ -372,7 +388,7 @@ main {
 }
 
 .card-content p {
-    color: #475569;
+    color: #333333; /* Dark text for better contrast */
     margin-bottom: 1.5rem;
     line-height: 1.6;
 }
@@ -441,9 +457,10 @@ main {
 }
 
 .about-text h3 {
-    color: #d35400;
-    margin: 2rem 0 1rem;
+    color: #8B4513; /* Dark brown - excellent contrast */
     font-size: 1.5rem;
+    margin: 1.5rem 0 1rem;
+    font-weight: 600;
 }
 
 .about-text p {
@@ -642,7 +659,7 @@ legend {
 .section-subtitle {
     text-align: center;
     font-size: 1.25rem;
-    color: #64748b;
+    color: #2c2c2c; /* Darker gray instead of light gray */
     max-width: 800px;
     margin: 0 auto 4rem;
     line-height: 1.8;
@@ -1127,14 +1144,14 @@ footer {
 }
 
 .footer-section a {
-    color: #f7fafc;
+    color: #f7fafc !important; /* Light gray text */
     text-decoration: none;
     transition: color 0.3s ease;
     font-size: 1rem;
 }
 
 .footer-section a:hover {
-    color: #d35400;
+    color: #ffffff !important; /* White on hover for better contrast */
 }
 
 /* Social Media Links */
@@ -1153,6 +1170,7 @@ footer {
     border-radius: 50%;
     text-decoration: none;
     transition: all 0.3s ease;
+    color: #ffffff !important;
 }
 
 .social-link:hover {
@@ -1160,12 +1178,12 @@ footer {
 }
 
 .social-text {
-    color: white;
+    color: #ffffff !important; /* Ensure white text on dark backgrounds */
     font-size: 1rem;
     font-weight: 700;
 }
 
-/* Individual Social Colors */
+/* Complete social media icon styles */
 .facebook {
     background: #3b5998;
 }
@@ -1275,15 +1293,18 @@ footer {
     border-radius: 20px;
     text-align: center;
     box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
-    transition: transform 0.3s ease;
+    transition: all 0.3s ease;
+    border: 3px solid #e2e8f0;
 }
 
 .package-card:hover {
-    transform: translateY(-8px);
+    transform: translateY(-8px) scale(1.02);
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15);
 }
 
 .package-card.highlight {
-    border: 3px solid #d35400;
+    border: 4px solid #d35400;
+    transform: scale(1.05);
 }
 
 .package-card h3 {
@@ -1454,11 +1475,11 @@ footer {
     position: absolute;
     top: 15px;
     left: 15px;
-    background: #d35400;
+    background: #bf4718;
     color: white;
     padding: 0.5rem 1rem;
     border-radius: 20px;
-    font-size: 0.85rem;
+    font-size: 1rem;
     font-weight: 600;
 }
 
@@ -1474,19 +1495,19 @@ footer {
 }
 
 .duration {
-    color: #475569;
+    color: #2d3748;
     font-size: 1rem;
     margin-bottom: 0.5rem;
 }
 
 .rating {
-    color: #f59e0b;
-    font-size: 1rem;
-    margin-bottom: 1rem;
+    opacity: 1 !important;
+    color: #8B4513 !important; /* Dark brown/gold - much better contrast */
+    background-color: rgb(255, 255, 255) !important;
 }
 
 .itinerary-detail {
-    color: #475569;
+    color: #2d3748;
     font-size: 1rem;
     margin-bottom: 0.75rem;
     line-height: 1.6;
@@ -1501,13 +1522,13 @@ footer {
 }
 
 .price strong {
-    color: #bf4718;
+    color: #b23a00 !important;
     font-size: 1.5rem;
     font-weight: 700;
 }
 
 .itinerary-detail strong {
-    color: #bf4718;  /* Consistent with other strong tags */
+    color: #bf4718 !important;  /* Consistent with other strong tags */
 }
 /* Package Cards with Highlight Border */
 .package-card {
@@ -1549,4 +1570,42 @@ footer {
 
 .skip-link:focus {
     top: 6px;
+}
+
+/* Fix social media link contrast issues */
+.social-text {
+    color: #ffffff !important; /* Ensure white text on dark backgrounds */
+}
+
+/* Ensure footer links have proper contrast */
+.footer-section a {
+    color: #f7fafc !important; /* Light gray text */
+    text-decoration: none;
+    transition: color 0.3s ease;
+    font-size: 1rem;
+}
+
+.footer-section a:hover {
+    color: #ffffff !important; /* White on hover for better contrast */
+}
+
+/* Fix any remaining low contrast text in footer */
+.footer-content {
+    color: #f7fafc !important;
+}
+
+.footer-brand p,
+.contact-info {
+    color: #f7fafc !important;
+}
+
+/* Ensure social link text is visible */
+.social-link {
+    color: #ffffff !important;
+    text-decoration: none;
+}
+
+/* Fix any span elements in footer that might have low contrast */
+footer span {
+    color: #f7fafc !important;
 }
