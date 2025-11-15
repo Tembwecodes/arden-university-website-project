@@ -73,9 +73,14 @@ body {
     font-size: 1rem;
     transition: all 0.3s ease;
     position: relative;
+    display: inline-block;
 }
 
-.nav-link:hover,
+.nav-link:hover {
+    color: #d35400;
+    transform: scale(1.05);
+}
+
 .nav-link.active {
     color: #1a1a1a;
 }
@@ -148,10 +153,12 @@ body {
         transform: rotate(45deg) translate(-5px, -6px);
     }
 }
+
 /* Main Content Styles */
 main {
     margin-top: 88px;
 }
+
 .hero {
     display: flex;
     align-items: center;
@@ -195,8 +202,6 @@ main {
     font-weight: 800;
     line-height: 1.1;
     margin-bottom: 1.5rem;
-    /*color: #1a1a1a;*/
-    /*letter-spacing: -0.03em;*/
 }
 
 .hero h1 span {
@@ -207,18 +212,18 @@ main {
 .hero p {
     color: white;
     font-size: 1.25rem;
-    /*color: #64748b;*/
     margin-bottom: 3rem;
-    /*line-height: 1.6;*/
     max-width: 700px;
     margin-left: auto;
     margin-right: auto;
 }
+
 .hero-buttons {
     display: flex;
     justify-content: center;
-    margin-top: 3rem;    /* centers the container itself */
+    margin-top: 3rem;
 }
+
 .btn {
     padding: 16px 32px;
     border: none;
@@ -234,7 +239,7 @@ main {
 }
 
 .btn-primary {
-    background-color: #c5440d; /* Changed from #d4671f to darker orange */
+    background-color: #c5440d;
     color: #ffffff;
     border: none;
     padding: 15px 30px;
@@ -245,7 +250,7 @@ main {
 }
 
 .btn-primary:hover {
-    background-color: #a63809; /* Even darker on hover */
+    background-color: #a63809;
     transform: translateY(-2px);
     box-shadow: 0 6px 20px rgba(196, 68, 13, 0.3);
 }
@@ -304,14 +309,11 @@ main {
 
 /* Make stats section h2 elements orange */
 .stats .stat-item h2 {
-    color: #bf4718; /* Orange color */
+    color: #bf4718;
     font-size: 3rem;
     font-weight: 700;
     margin-bottom: 0.5rem;
 }
-
-
-
 
 .stat-item p {
     font-size: 1.1rem;
@@ -388,7 +390,7 @@ main {
 }
 
 .card-content p {
-    color: #333333; /* Dark text for better contrast */
+    color: #333333;
     margin-bottom: 1.5rem;
     line-height: 1.6;
 }
@@ -406,16 +408,92 @@ main {
     color: #bf4718;
 }
 
-/* Add responsive design and other page styles */
-@media screen and (max-width: 1024px) {
-    .hero h1 {
-        font-size: 3rem;
-    }
-    
-    .destination-feature {
-        grid-template-columns: 1fr;
-    }
+/* Image Credit Styles */
+.experience-card figure,
+.animal-card figure,
+.category-card figure {
+    margin: 0;
+    position: relative;
+    overflow: hidden;
 }
+
+.image-credit {
+    position: absolute;
+    bottom: 8px;
+    right: 8px;
+    background: rgba(0, 0, 0, 0.75);
+    color: white;
+    padding: 4px 10px;
+    font-size: 0.7rem;
+    border-radius: 4px;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    z-index: 10;
+}
+
+.experience-card:hover .image-credit,
+.animal-card:hover .image-credit,
+.category-card:hover .image-credit {
+    opacity: 1;
+}
+
+.image-credit a {
+    color: #ffa726;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.image-credit a:hover {
+    text-decoration: underline;
+    color: #ffb74d;
+}
+
+/* Itinerary card image credits */
+.itinerary-card-modern .card-image {
+    position: relative;
+    overflow: hidden;
+}
+
+.itinerary-card-modern:hover .image-credit {
+    opacity: 1;
+}
+
+/* Adjust badge positioning to avoid overlapping with credit */
+.card-badge {
+    position: absolute;
+    top: 15px;
+    left: 15px;
+    background: #bf4718;
+    color: white;
+    padding: 0.5rem 1rem;
+    border-radius: 20px;
+    font-size: 1rem;
+    font-weight: 600;
+    z-index: 11;
+}
+
+/* Destination feature image credits */
+.destination-image figure {
+    margin: 0;
+    position: relative;
+    overflow: hidden;
+}
+
+.destination-feature:hover .image-credit {
+    opacity: 1;
+}
+
+/* About page image credits */
+.about-image figure {
+    margin: 0;
+    position: relative;
+    overflow: hidden;
+}
+
+.about-grid:hover .image-credit {
+    opacity: 1;
+}
+
 /* Page Header Styles */
 .page-header {
     background: linear-gradient(135deg, #d35400 0%, #d35400 100%);
@@ -457,7 +535,7 @@ main {
 }
 
 .about-text h3 {
-    color: #8B4513; /* Dark brown - excellent contrast */
+    color: #8B4513;
     font-size: 1.5rem;
     margin: 1.5rem 0 1rem;
     font-weight: 600;
@@ -609,38 +687,15 @@ legend {
     left: 6px;
     background: #1a1a1a;
     color: white;
-    padding: 8px;
+    padding: 8px 16px;
     text-decoration: none;
     transition: top 0.3s;
     border-radius: 4px;
+    z-index: 2000;
 }
 
 .skip-link:focus {
     top: 6px;
-}
-
-/* Responsive Form */
-@media screen and (max-width: 768px) {
-    .form-row {
-        grid-template-columns: 1fr;
-    }
-    
-    .checkbox-grid {
-        grid-template-columns: 1fr;
-    }
-    
-    .radio-group {
-        grid-template-columns: 1fr;
-    }
-    
-    .about-grid {
-        grid-template-columns: 1fr;
-    }
-    
-    .form-container {
-        padding: 2rem;
-        margin: 0 1rem;
-    }
 }
 
 /* Wildlife Page Styles */
@@ -659,7 +714,7 @@ legend {
 .section-subtitle {
     text-align: center;
     font-size: 1.25rem;
-    color: #2c2c2c; /* Darker gray instead of light gray */
+    color: #2c2c2c;
     max-width: 800px;
     margin: 0 auto 4rem;
     line-height: 1.8;
@@ -827,25 +882,6 @@ legend {
     object-fit: cover;
     border-radius: 20px;
     box-shadow: 0 20px 40px rgba(0, 0, 0, 0.12);
-}
-
-/* Responsive Wildlife Pages */
-@media screen and (max-width: 768px) {
-    .safari-option {
-        grid-template-columns: 1fr;
-    }
-    
-    .safari-option:nth-child(even) {
-        direction: ltr;
-    }
-    
-    .conservation-grid {
-        grid-template-columns: 1fr;
-    }
-    
-    .animals-grid {
-        grid-template-columns: 1fr;
-    }
 }
 
 /* Destinations Page Styles */
@@ -1016,7 +1052,7 @@ legend {
 
 .visa-list {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmin(200px, 1fr));
     gap: 1rem;
     list-style: none;
     padding: 0;
@@ -1144,14 +1180,14 @@ footer {
 }
 
 .footer-section a {
-    color: #f7fafc !important; /* Light gray text */
+    color: #f7fafc !important;
     text-decoration: none;
     transition: color 0.3s ease;
     font-size: 1rem;
 }
 
 .footer-section a:hover {
-    color: #ffffff !important; /* White on hover for better contrast */
+    color: #ffffff !important;
 }
 
 /* Social Media Links */
@@ -1178,7 +1214,7 @@ footer {
 }
 
 .social-text {
-    color: #ffffff !important; /* Ensure white text on dark backgrounds */
+    color: #ffffff !important;
     font-size: 1rem;
     font-weight: 700;
 }
@@ -1238,22 +1274,10 @@ footer {
     text-decoration: underline;
 }
 
-/* Responsive Footer */
-@media screen and (max-width: 768px) {
-    .footer-content {
-        grid-template-columns: 1fr;
-        gap: 2rem;
-    }
-    
-    .footer-brand {
-        max-width: 100%;
-    }
-}
-
 /* Itineraries Section */
 .itineraries-section {
     padding: 6rem 0;
-    background: white;
+    background: #fafbfc;
 }
 
 .itinerary-grid {
@@ -1305,6 +1329,10 @@ footer {
 .package-card.highlight {
     border: 4px solid #d35400;
     transform: scale(1.05);
+}
+
+.package-card.highlight:hover {
+    transform: translateY(-8px) scale(1.07);
 }
 
 .package-card h3 {
@@ -1408,31 +1436,7 @@ footer {
     padding-left: 2rem;
 }
 
-/* Mobile dropdown behavior */
-@media screen and (max-width: 768px) {
-    .dropdown-menu {
-        position: static;
-        opacity: 1;
-        visibility: visible;
-        transform: none;
-        box-shadow: none;
-        background: #f8fafc;
-        margin-top: 0.5rem;
-        border-radius: 0;
-    }
-    
-    .dropdown-menu a {
-        padding-left: 2rem;
-        font-size: 0.9rem;
-    }
-}
-
 /* Modern Itinerary Cards */
-.itineraries-section {
-    padding: 6rem 0;
-    background: #fafbfc;
-}
-
 .itinerary-cards-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
@@ -1471,18 +1475,6 @@ footer {
     transform: scale(1.1);
 }
 
-.card-badge {
-    position: absolute;
-    top: 15px;
-    left: 15px;
-    background: #bf4718;
-    color: white;
-    padding: 0.5rem 1rem;
-    border-radius: 20px;
-    font-size: 1rem;
-    font-weight: 600;
-}
-
 .card-body {
     padding: 2rem;
 }
@@ -1502,7 +1494,7 @@ footer {
 
 .rating {
     opacity: 1 !important;
-    color: #8B4513 !important; /* Dark brown/gold - much better contrast */
+    color: #8B4513 !important;
     background-color: rgb(255, 255, 255) !important;
 }
 
@@ -1528,84 +1520,80 @@ footer {
 }
 
 .itinerary-detail strong {
-    color: #bf4718 !important;  /* Consistent with other strong tags */
-}
-/* Package Cards with Highlight Border */
-.package-card {
-    background: white;
-    padding: 2.5rem;
-    border-radius: 20px;
-    text-align: center;
-    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
-    transition: all 0.3s ease;
-    border: 3px solid #e2e8f0;
+    color: #bf4718 !important;
 }
 
-.package-card.highlight {
-    border: 4px solid #d35400;
-    transform: scale(1.05);
+/* Responsive Design */
+@media screen and (max-width: 1024px) {
+    .hero h1 {
+        font-size: 3rem;
+    }
+    
+    .destination-feature {
+        grid-template-columns: 1fr;
+    }
 }
 
-.package-card:hover {
-    transform: translateY(-8px) scale(1.02);
-    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15);
-}
-
-.package-card.highlight:hover {
-    transform: translateY(-8px) scale(1.07);
-}
-
-.skip-link {
-    position: absolute;
-    top: -40px;
-    left: 6px;
-    background: #1a1a1a;
-    color: white;
-    padding: 8px 16px;
-    text-decoration: none;
-    transition: top 0.3s;
-    border-radius: 4px;
-    z-index: 2000;
-}
-
-.skip-link:focus {
-    top: 6px;
-}
-
-/* Fix social media link contrast issues */
-.social-text {
-    color: #ffffff !important; /* Ensure white text on dark backgrounds */
-}
-
-/* Ensure footer links have proper contrast */
-.footer-section a {
-    color: #f7fafc !important; /* Light gray text */
-    text-decoration: none;
-    transition: color 0.3s ease;
-    font-size: 1rem;
-}
-
-.footer-section a:hover {
-    color: #ffffff !important; /* White on hover for better contrast */
-}
-
-/* Fix any remaining low contrast text in footer */
-.footer-content {
-    color: #f7fafc !important;
-}
-
-.footer-brand p,
-.contact-info {
-    color: #f7fafc !important;
-}
-
-/* Ensure social link text is visible */
-.social-link {
-    color: #ffffff !important;
-    text-decoration: none;
-}
-
-/* Fix any span elements in footer that might have low contrast */
-footer span {
-    color: #f7fafc !important;
+@media screen and (max-width: 768px) {
+    .form-row {
+        grid-template-columns: 1fr;
+    }
+    
+    .checkbox-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .radio-group {
+        grid-template-columns: 1fr;
+    }
+    
+    .about-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .form-container {
+        padding: 2rem;
+        margin: 0 1rem;
+    }
+    
+    .safari-option {
+        grid-template-columns: 1fr;
+    }
+    
+    .safari-option:nth-child(even) {
+        direction: ltr;
+    }
+    
+    .conservation-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .animals-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .footer-content {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+    }
+    
+    .footer-brand {
+        max-width: 100%;
+    }
+    
+    .dropdown-menu {
+        position: static;
+        opacity: 1;
+        visibility: visible;
+        transform: none;
+        box-shadow: none;
+        background: #f8fafc;
+        margin-top: 0.5rem;
+        border-radius: 0;
+    }
+    
+    .dropdown-menu a {
+        padding-left: 2rem;
+        font-size: 0.9rem;
+    }
 }
